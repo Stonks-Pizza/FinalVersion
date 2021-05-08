@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Separator layoutX="7.0" layoutY="120.0" prefHeight="3.0" prefWidth="1000.0">
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+            <effect>
+                <Shadow radius="4.75" width="0.0">
+                    <input>
+                        <SepiaTone />
+                    </input>
+                </Shadow>
+            </effect>
+        </Separator>
+        <ImageView fitHeight="82.0" fitWidth="126.0" layoutX="12.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@StonksLogo.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="HomeBtn" layoutX="17.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleHomeBtn" prefHeight="25.0" prefWidth="84.0" text="HOME" />
+        <Button fx:id="BackToMenuBtn" layoutX="18.0" layoutY="734.0" mnemonicParsing="false" onAction="#handleBackToMenuBtn" text="BACK" />
+        <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="17.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Backarrow.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="68.0" fitWidth="136.0" layoutX="896.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ProfileIcon.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="ProfileBtn" layoutX="904.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleProfileBtn" text="Profile" />
+        <Button fx:id="CheckOutBtn" layoutX="434.0" layoutY="601.0" mnemonicParsing="false" onAction="#handleCheckOutBtn" text="Check-Out">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+        <Text layoutX="441.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CART" textAlignment="CENTER" wrappingWidth="132.634765625">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Text>
+        <Text layoutX="245.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items">
+         <font>
+            <Font size="36.0" />
+         </font></Text>
+        <Text layoutX="650.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font size="36.0" />
+         </font></Text>
+        <Text layoutX="613.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+        <Text layoutX="614.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Label fx:id="item1" layoutX="245.0" layoutY="282.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="309.0" text="Custom Pizza: Medium, Thin crust, cheese, bacon, pineapple toppings   $9.00">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="338.0" text="Beverage: 2 Liter Coke     $3.00">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="363.0" text="Empty">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="392.0" text="Empty">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="417.0" text="Empty">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="300.0" layoutX="434.0" layoutY="358.0" startX="-184.0" />
+      <Line endX="300.0" layoutX="434.0" layoutY="383.0" startX="-182.0" />
+      <Line endX="303.0" layoutX="434.0" layoutY="412.0" startX="-181.0" />
+      <Line endX="305.0" layoutX="434.0" layoutY="437.0" startX="-179.0" />
+      <Line endX="292.8515625" endY="1.03515625" layoutX="434.0" layoutY="253.0" startX="-183.0" startY="1.03515625" />
+      <Label layoutX="672.0" layoutY="484.0" text="\$2.50">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="675.0" layoutY="518.0" text="\$24.50">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="145.0" layoutY="307.0" startX="589.0" />
+      <Line endX="100.0" layoutX="145.0" layoutY="334.0" startX="591.0" />
+      <Label layoutX="241.0" layoutY="286.0" text="Signature Cheese Pizza: Large, Regular crust,cheese toppings   $10.00">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
